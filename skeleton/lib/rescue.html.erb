@@ -1,1 +1,9 @@
-<h1>RuntimeError</h1>
+<%= e.message %>
+
+<h3>Source</h3>
+
+
+<h2>Backtrace</h2>
+  <% e.backtrace.each do |line| %>
+    <%= line %>
+  <% end %>

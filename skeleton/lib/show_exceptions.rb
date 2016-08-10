@@ -13,7 +13,7 @@ class ShowExceptions
     req = Rack::Request.new(env)
     begin
       app.call(env)
-    rescue Exception => e
+    rescue => e
       render_exception(e)
     end
   end
