@@ -1,9 +1,10 @@
-require 'active_support'
-require 'active_support/core_ext'
+#require 'active_support'
+#require 'active_support/core_ext'
 require 'erb'
 require_relative './session'
 require 'byebug'
 require_relative './flash'
+
 
 class ControllerBase
   attr_reader :req, :res, :params
